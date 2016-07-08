@@ -11,6 +11,15 @@
     <label for="exampleInputEmail1">Enter Phone Number</label>
     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter phone number">
   </fieldset>
+
+
+<fieldset class="form-group">
+    <label for="exampleInputEmail1">Select Date</label>
+    <input type="text" id="datepicker" class="form-control"  placeholder="Select date">
+</fieldset>
+ 
+
+
   
   <fieldset class="form-group">
     <label for="exampleSelect1">Select Time</label>
@@ -36,3 +45,9 @@
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 </div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"></script>
+<script>$(function() {
+    $("#datepicker").datepicker();
+});</script>

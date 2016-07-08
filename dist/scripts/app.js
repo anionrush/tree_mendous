@@ -24,6 +24,11 @@
                 .state('consultation', {
                     url: '/consultation',
                     templateUrl: '/templates/consultation.html'
+                })
+                .state('admin', {
+                    url: '/admin',
+                    controller: 'ApptCtrl as appt',
+                    templateUrl: '/templates/admin.html'
                 });
             }
 

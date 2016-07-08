@@ -2,31 +2,33 @@
 <html ng-app="treeMendous">
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Bloc Base Project</title>
+    <title>Tree Mendous</title>
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.css">
+   <script src="https://code.jquery.com/jquery-1.10.2.min.js" integrity="sha256-C6CB9UYIS9UJeqinPHWTHVqh/E1uhG5Twh+Y5qFQmYg="   crossorigin="anonymous"></script>
+   
+   
+    
 </head>
 <body>    
+    
     <ui-view></ui-view> 
 
-
     <!--Bottom Navbar-->
-    <footer>
-        <div class="navbar navbar-inverse navbar-fixed-bottom"  style="height:7vh;">
+    <footer style="margin-top:50px;">
+        <div class="navbar navbar-inverse navbar-fixed-bottom nav-top"  style="height:7vh;">
             <div class="container pull-right">
                 <div class="navbar-collapse collapse" >
                     <ul class="nav navbar-nav pull-right">
-                        <li><a ui-sref="/">Home</a></li>
-                        <li><a ui-sref="bio">Bio</a></li>
-                        <li><a ui-sref="options">Trimming Preferences</a></li>
-                        <li><a ui-sref="consultation">Consultation Scheduling</a></li>
+                        <li><a ui-sref="/" style="font-size:200%">Home</a></li>
+                        <li><a ui-sref="bio" style="font-size:200%">Bio</a></li>
+                        <li><a ui-sref="options" style="font-size:200%">Trimming Preferences</a></li>
+                        <li><a ui-sref="consultation" style="font-size:200%">Consultation Scheduling</a></li>
                     </ul>
                 </div>
                 <div class="navbar-header">
@@ -36,22 +38,28 @@
                         <span class="icon-bar"></span>
                     </button>
                 </div>
-
             </div>
         </div>
     </footer>  
    
-   
-    
+    <!-- AngularJS and treeMendous module dependencies -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
     <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
     <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
-
+    
+    <!-- JQuery and Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    
+    
+    <!-- Module and Controllers -->
     <script src="/scripts/app.js"></script>
     <script src="/scripts/OptionCtrl.js"></script>
-    <script>
-        
-    </script>
+    <script src="/scripts/ApptCtrl.js"></script>
+    
+    
+
+    
 </body>
 </html>
