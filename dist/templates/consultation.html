@@ -4,26 +4,28 @@
  
   <fieldset class="form-group">
     <label for="exampleInputEmail1">Enter Name</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter name">
+    <input class="form-control" ng-model="appt.nameText" placeholder="Enter name">
   </fieldset>
   
   <fieldset class="form-group">
     <label for="exampleInputEmail1">Enter Phone Number</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter phone number">
+    <input class="form-control" ng-model="appt.phoneText" placeholder="Enter phone number">
   </fieldset>
 
 
+
 <fieldset class="form-group">
-    <label for="exampleInputEmail1">Select Date</label>
-    <input type="text" id="datepicker" class="form-control"  placeholder="Select date">
+    <label >Select Date</label>
+    <input type="text" id="datepicker" class="form-control"  ng-model="appt.dateText" placeholder="Select date">
 </fieldset>
+
  
 
 
   
   <fieldset class="form-group">
     <label for="exampleSelect1">Select Time</label>
-    <select class="form-control" id="exampleSelect1">
+    <select class="form-control" ng-model="appt.timeText">
       <option>1:00 pm </option>
       <option>2:00 pm</option>
       <option>3:00 pm</option>
@@ -34,20 +36,20 @@
   
   <fieldset class="form-group">
     <label for="exampleTextarea">Enter Full Address</label>
-    <textarea class="form-control" id="exampleTextarea" rows="2"></textarea>
+    <textarea class="form-control" ng-model="appt.addressText" rows="2"></textarea>
   </fieldset>
   
   <fieldset class="form-group">
     <label for="exampleTextarea">Give a Brief Description</label>
-    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+    <textarea class="form-control" ng-model="appt.descriptionText" rows="3"></textarea>
   </fieldset>
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary" ng-click="appt.addAppt()">Submit</button>
 </form>
 </div>
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
 <script>$(function() {
-    $("#datepicker").datepicker();
+    $("#datepicker").datepicker({minDate: 0});
 });</script>

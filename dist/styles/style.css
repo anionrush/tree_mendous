@@ -12,3 +12,8 @@
 .nav-top {
     margin-top:10px !important;
 }
+
+div.home{
+    background: url(/assets/images/background.png) no-repeat center center fixed;
+    background-size: cover;   
+}

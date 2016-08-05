@@ -1,5 +1,5 @@
 <div class="container" >
-    <table class="table" style="height: 93vh; width:100%">
+    <table class="table" style="width:100%">
         <thead>
             <tr>
                 <th>Name</th>
@@ -12,14 +12,17 @@
         </thead>
 
         <tbody>
-            <tr>
-                <td> --- </td>
-                <td> --- </td>
-                <td> --- </td>
-                <td> --- </td>
-                <td> --- </td>
-                <td> --- </td>
-            </tr>
+
+            <tr ng-repeat="apt in appt.apptArray">
+                <td>{{apt.name}}</td>
+                <td>{{apt.phone}}</td>
+                <td>{{apt.date}}</td>
+                <td>{{apt.time}}</td>
+                <td>{{apt.address}}</td>
+                <td>{{apt.description}}</td>
+                
+            </tr> 
+            
         </tbody>
     </table>
 </div>
