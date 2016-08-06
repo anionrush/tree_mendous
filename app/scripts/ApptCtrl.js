@@ -29,7 +29,7 @@
                 description: this.descriptionText
             })
             
-            //this.listDates.$add(this.dateText);
+            Dates.add(this.dateText);
             
             this.nameText=null;
             this.phoneText=null;
