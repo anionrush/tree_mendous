@@ -34,6 +34,6 @@
     }
 
             
-    angular.module('treeMendous', ['firebase','ui.router'])
+    angular.module('treeMendous', ['firebase','ui.router','720kb.datepicker'])
         .config(config);
 })();

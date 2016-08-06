@@ -13,14 +13,11 @@
   </fieldset>
 
 
-
+<!--{{appt.Dates.dates}}-->
 <fieldset class="form-group">
     <label >Select Date</label>
-    <input type="text" id="datepicker" class="form-control"  ng-model="appt.dateText" placeholder="Select date">
+    <datepicker date-format="shortDate" date-disabled-dates="{{appt.Dates.dates}}"> <input ng-model="appt.dateText" type="text" class="form-control"/> </datepicker>
 </fieldset>
-
- 
-
 
   
   <fieldset class="form-group">
@@ -47,9 +44,3 @@
   <button type="submit" class="btn btn-primary" ng-click="appt.addAppt()">Submit</button>
 </form>
 </div>
-
-<script src="http://code.jquery.com/jquery-1.9.0.js"></script>
-<script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
-<script>$(function() {
-    $("#datepicker").datepicker({minDate: 0});
-});</script>
